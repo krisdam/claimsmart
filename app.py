@@ -1,69 +1,80 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
+import numpy as np
 import pickle
+import os
 
 app = Flask(__name__)
 CORS(app)
 
-# Load model at startup
-with open('models/claim_model.pkl', 'rb') as f:
-    model = pickle.load(f)
-
-with open('models/feature_columns.pkl', 'rb') as f:
-    feature_columns = pickle.load(f)
+# Load model and feature columns
+model = pickle.load(open('models/claim_model.pkl', 'rb'))
+feature_columns = pickle.load(open('models/feature_columns.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return jsonify({
-        'message': 'ClaimSmart API v1.0',
-        'status': 'running',
-        'model_loaded': True
-    })
+    return jsonify({"message": "ClaimSmart API is running!"})
 
 @app.route('/api/test')
 def test():
-    return jsonify({
-        'message': 'API is working!',
-        'features_count': len(feature_columns)
-    })
+    return jsonify({"status": "API working", "model_loaded": True})
 
 @app.route('/api/predict', methods=['POST'])
 def predict():
     try:
-        # Get data from request
-        data = request.get_json()
-        
-        # Example: predict on test data
-        test_df = pd.read_csv('data/test_data.csv')
-        
+        # Check if a file was uploaded
+        if 'file' in request.files:
+            file = request.files['file']
+            df = pd.read_csv(file)
+        else:
+            # Fall back to default test data
+            df = pd.read_csv('data/test_data.csv')
+
         # Prepare features
-        df_encoded = pd.get_dummies(test_df, columns=['procedure_code', 'denial_reason', 'provider_specialty'])
+    # One-hot encode categorical columns
+        categorical_cols = ['procedure_code', 'denial_reason', 'provider_specialty']
+        existing_cats = [col for col in categorical_cols if col in df.columns]
+        if existing_cats:
+            df = pd.get_dummies(df, columns=existing_cats)
         
-        # Ensure all feature columns exist
+        # Align columns with training data
         for col in feature_columns:
-            if col not in df_encoded.columns:
-                df_encoded[col] = 0
+            if col not in df.columns:
+                df[col] = 0
+        X = df[feature_columns]
         
-        X = df_encoded[feature_columns]
-        
-        # Make predictions
-        predictions = model.predict(X)
+        # Get predictions
         probabilities = model.predict_proba(X)[:, 1]
+        df['success_probability'] = probabilities
+        df['predicted_recovery'] = df['billed_amount'] * df['success_probability']
         
-        # Get top 5 recommendations
-        test_df['success_probability'] = probabilities
-        test_df['predicted_recovery'] = test_df['billed_amount'] * probabilities
-        top_5 = test_df.nlargest(5, 'predicted_recovery')
+        # Filter recommended appeals (>50% success probability)
+        recommended = df[df['success_probability'] > 0.5].copy()
+        recommended = recommended.sort_values('predicted_recovery', ascending=False)
+        
+        # Top 5
+        top_5 = recommended.head(5)
+        
+        top_5_list = []
+        for _, row in top_5.iterrows():
+            top_5_list.append({
+                'claim_id': row['claim_id'],
+                'billed_amount': round(float(row['billed_amount']), 2),
+                'success_probability': round(float(row['success_probability']), 4),
+                'predicted_recovery': round(float(row['predicted_recovery']), 2)
+            })
         
         return jsonify({
-            'total_claims': len(test_df),
-            'recommended_appeals': int(predictions.sum()),
-            'top_5_appeals': top_5[['claim_id', 'billed_amount', 'success_probability', 'predicted_recovery']].to_dict('records')
+            'total_claims': len(df),
+            'recommended_appeals': len(recommended),
+            'total_estimated_recovery': round(float(recommended['predicted_recovery'].sum()), 2),
+            'avg_success_probability': round(float(recommended['success_probability'].mean()), 4),
+            'top_5_appeals': top_5_list
         })
-        
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
     
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True)
