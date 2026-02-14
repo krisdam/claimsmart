@@ -25,7 +25,7 @@ function App() {
           body: JSON.stringify({})
         };
       }
-      const response = await fetch('http://127.0.0.1:5000/api/predict', options);
+      const response = await fetch('https://claimsmart-api.onrender.com/api/predict', options);
       const data = await response.json();
       if (data.error) {
         setError(data.error);
