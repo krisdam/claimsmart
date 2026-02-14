@@ -1,0 +1,201 @@
+claim_id,procedure_code,billed_amount,denial_reason,days_since_denial,provider_specialty,documentation_score,prior_authorization,patient_age,appeal_successful
+CLM00001,20605,2385,Missing documentation,165,Orthopedics,4,0,70,1
+CLM00002,70450,4238,Incorrect coding,168,Gastroenterology,5,1,28,1
+CLM00003,20605,4087,Incorrect coding,73,Physical Therapy,10,1,56,1
+CLM00004,99215,3648,Missing documentation,28,Physical Therapy,2,1,75,1
+CLM00005,70450,2899,Not medically necessary,145,Gastroenterology,2,0,60,0
+CLM00006,99215,2160,Incorrect coding,84,Gastroenterology,5,0,80,1
+CLM00007,99213,1830,Out of network,33,Gastroenterology,2,0,40,0
+CLM00008,99213,3377,Incorrect coding,46,Gastroenterology,8,0,61,1
+CLM00009,20605,2087,Out of network,88,Family Medicine,3,1,39,0
+CLM00010,20610,3914,Missing documentation,55,Physical Therapy,9,1,33,1
+CLM00011,70450,3888,Not medically necessary,150,Orthopedics,6,1,31,0
+CLM00012,20605,837,Experimental procedure,10,Family Medicine,7,0,82,1
+CLM00013,99213,4728,Experimental procedure,57,Physical Therapy,3,0,47,0
+CLM00014,99215,4924,No prior authorization,41,Internal Medicine,2,0,40,1
+CLM00015,20605,512,Incorrect coding,155,Orthopedics,4,0,55,0
+CLM00016,99214,3622,Not medically necessary,141,Physical Therapy,4,0,41,1
+CLM00017,20605,1879,Incorrect coding,109,Radiology,2,1,80,0
+CLM00018,70553,4721,No prior authorization,89,Orthopedics,4,1,66,0
+CLM00019,99213,4876,Experimental procedure,72,Physical Therapy,5,0,36,0
+CLM00020,97110,4177,No prior authorization,144,Family Medicine,2,1,18,0
+CLM00021,20605,1923,No prior authorization,175,Radiology,8,0,72,1
+CLM00022,20610,4469,Experimental procedure,74,Orthopedics,7,0,40,0
+CLM00023,70553,4957,Missing documentation,65,Radiology,1,0,81,0
+CLM00024,99214,1903,Experimental procedure,152,Physical Therapy,8,0,76,0
+CLM00025,45378,3503,Not medically necessary,52,Radiology,1,0,61,1
+CLM00026,70553,2289,Missing documentation,175,Gastroenterology,7,0,70,0
+CLM00027,97112,2365,Out of network,20,Internal Medicine,9,1,27,1
+CLM00028,97112,1681,Missing documentation,119,Orthopedics,2,0,69,0
+CLM00029,70450,2274,Not medically necessary,106,Physical Therapy,7,0,78,1
+CLM00030,97110,1745,Not medically necessary,16,Gastroenterology,1,0,79,1
+CLM00031,99214,1338,No prior authorization,90,Gastroenterology,7,0,49,1
+CLM00032,20605,864,Not medically necessary,31,Family Medicine,10,0,52,1
+CLM00033,70450,4373,Not medically necessary,163,Gastroenterology,5,0,49,0
+CLM00034,99213,3528,Out of network,79,Gastroenterology,3,0,32,0
+CLM00035,20605,1365,Out of network,26,Internal Medicine,7,0,70,0
+CLM00036,97110,2113,Incorrect coding,88,Physical Therapy,3,0,38,0
+CLM00037,99215,4256,Incorrect coding,120,Internal Medicine,4,1,46,1
+CLM00038,70450,2877,Not medically necessary,67,Internal Medicine,9,0,66,1
+CLM00039,20610,3086,Not medically necessary,146,Gastroenterology,1,0,20,0
+CLM00040,20605,770,Out of network,114,Orthopedics,8,0,27,1
+CLM00041,99213,3740,Experimental procedure,30,Physical Therapy,7,0,48,0
+CLM00042,97112,4043,No prior authorization,23,Physical Therapy,8,1,55,1
+CLM00043,70553,2791,Experimental procedure,47,Family Medicine,10,1,41,0
+CLM00044,45378,1569,No prior authorization,43,Family Medicine,7,1,27,1
+CLM00045,20605,3433,Out of network,143,Internal Medicine,8,1,81,1
+CLM00046,70450,1125,Experimental procedure,165,Gastroenterology,7,0,43,0
+CLM00047,70450,1680,Not medically necessary,1,Orthopedics,2,1,28,1
+CLM00048,99213,4247,No prior authorization,21,Physical Therapy,9,0,18,1
+CLM00049,97110,1067,Out of network,37,Orthopedics,2,1,64,0
+CLM00050,45378,2835,No prior authorization,64,Internal Medicine,10,1,47,1
+CLM00051,99213,1076,Not medically necessary,38,Family Medicine,10,0,76,1
+CLM00052,70553,4978,Not medically necessary,158,Family Medicine,1,1,66,0
+CLM00053,99213,2251,Out of network,89,Family Medicine,9,0,49,1
+CLM00054,99215,2596,Experimental procedure,60,Orthopedics,2,1,73,0
+CLM00055,70450,4356,Not medically necessary,76,Radiology,4,1,20,1
+CLM00056,99214,1476,No prior authorization,37,Gastroenterology,10,0,50,1
+CLM00057,97112,3719,Out of network,24,Physical Therapy,6,1,82,1
+CLM00058,20605,4144,Out of network,51,Orthopedics,6,1,78,0
+CLM00059,20605,4832,Experimental procedure,61,Gastroenterology,5,1,24,0
+CLM00060,70450,4707,Incorrect coding,36,Gastroenterology,6,0,34,0
+CLM00061,99215,2396,Out of network,150,Physical Therapy,3,0,54,0
+CLM00062,99215,1859,Missing documentation,154,Family Medicine,4,0,62,0
+CLM00063,97112,4141,Incorrect coding,172,Radiology,5,1,34,0
+CLM00064,70553,958,Missing documentation,144,Orthopedics,2,1,60,1
+CLM00065,20605,2884,Experimental procedure,158,Radiology,3,0,26,0
+CLM00066,97110,3120,No prior authorization,178,Internal Medicine,1,1,28,1
+CLM00067,97112,4592,Out of network,47,Gastroenterology,5,0,36,1
+CLM00068,45378,2681,Experimental procedure,49,Family Medicine,2,0,29,0
+CLM00069,97110,1464,Experimental procedure,59,Radiology,3,1,72,1
+CLM00070,97112,1613,Incorrect coding,55,Physical Therapy,1,0,38,0
+CLM00071,70450,3638,Missing documentation,113,Radiology,10,1,45,1
+CLM00072,99215,2216,Incorrect coding,79,Family Medicine,3,1,64,0
+CLM00073,97112,2676,Experimental procedure,64,Physical Therapy,10,0,76,1
+CLM00074,99215,2832,Not medically necessary,161,Radiology,10,1,21,1
+CLM00075,99214,2254,Not medically necessary,150,Orthopedics,7,0,40,1
+CLM00076,70553,2258,Missing documentation,26,Family Medicine,10,0,55,1
+CLM00077,20605,3088,Incorrect coding,61,Gastroenterology,3,1,66,0
+CLM00078,99213,4739,Not medically necessary,77,Gastroenterology,1,1,72,0
+CLM00079,97112,1940,Not medically necessary,29,Physical Therapy,6,0,48,1
+CLM00080,99213,971,No prior authorization,41,Physical Therapy,3,0,69,1
+CLM00081,99215,1098,Missing documentation,141,Family Medicine,2,0,84,0
+CLM00082,97112,3250,Out of network,151,Gastroenterology,2,1,73,0
+CLM00083,99213,3512,Not medically necessary,125,Radiology,4,1,50,1
+CLM00084,97110,2005,No prior authorization,26,Family Medicine,4,0,71,0
+CLM00085,99213,788,Incorrect coding,16,Physical Therapy,7,1,79,1
+CLM00086,45378,4607,Not medically necessary,73,Orthopedics,3,1,26,0
+CLM00087,20610,4325,Out of network,125,Orthopedics,2,0,41,0
+CLM00088,99214,1210,Missing documentation,147,Family Medicine,6,0,50,0
+CLM00089,70553,4762,Incorrect coding,72,Internal Medicine,5,0,42,1
+CLM00090,99214,4870,Out of network,20,Internal Medicine,9,1,34,1
+CLM00091,97110,1207,Out of network,84,Orthopedics,7,0,43,0
+CLM00092,20610,1476,Missing documentation,121,Family Medicine,4,1,54,1
+CLM00093,99213,1554,Missing documentation,12,Orthopedics,8,1,49,1
+CLM00094,97110,4053,Experimental procedure,116,Radiology,8,1,50,0
+CLM00095,70450,4431,Missing documentation,171,Orthopedics,4,0,36,1
+CLM00096,20605,956,Experimental procedure,17,Radiology,9,0,25,1
+CLM00097,99213,4799,Out of network,41,Physical Therapy,2,0,82,0
+CLM00098,20610,886,No prior authorization,25,Internal Medicine,5,0,57,1
+CLM00099,99214,1669,Missing documentation,16,Gastroenterology,9,0,70,1
+CLM00100,20605,3731,Out of network,150,Orthopedics,4,0,33,1
+CLM00101,70553,3840,Missing documentation,12,Family Medicine,3,0,50,1
+CLM00102,99214,4063,Not medically necessary,178,Physical Therapy,7,0,62,0
+CLM00103,99214,4129,Experimental procedure,142,Orthopedics,7,0,78,0
+CLM00104,97110,1661,Not medically necessary,77,Family Medicine,2,0,78,0
+CLM00105,99213,4298,Out of network,100,Family Medicine,9,1,19,1
+CLM00106,99214,4718,Out of network,171,Physical Therapy,8,0,82,0
+CLM00107,70450,2642,Missing documentation,41,Orthopedics,7,0,47,1
+CLM00108,20605,3779,Missing documentation,66,Internal Medicine,5,0,49,1
+CLM00109,20610,709,Incorrect coding,154,Internal Medicine,1,0,22,1
+CLM00110,97112,3702,Experimental procedure,163,Orthopedics,7,1,60,0
+CLM00111,97110,2331,Not medically necessary,157,Internal Medicine,9,0,36,0
+CLM00112,99213,4508,Experimental procedure,115,Physical Therapy,10,1,53,1
+CLM00113,99213,1016,Missing documentation,78,Orthopedics,7,1,64,1
+CLM00114,99215,4818,Not medically necessary,53,Physical Therapy,7,1,63,1
+CLM00115,70553,3850,Experimental procedure,70,Internal Medicine,2,0,78,0
+CLM00116,99214,4614,Not medically necessary,40,Gastroenterology,2,1,55,1
+CLM00117,99213,1711,Out of network,68,Orthopedics,8,0,19,1
+CLM00118,97110,4040,No prior authorization,59,Orthopedics,8,1,41,1
+CLM00119,70553,1579,No prior authorization,120,Orthopedics,2,0,83,1
+CLM00120,99214,1309,Not medically necessary,164,Family Medicine,9,1,55,1
+CLM00121,97110,2892,Missing documentation,18,Gastroenterology,2,1,32,1
+CLM00122,97112,687,Missing documentation,57,Family Medicine,2,1,39,1
+CLM00123,20605,2304,Out of network,29,Gastroenterology,1,0,65,0
+CLM00124,99215,4074,No prior authorization,101,Gastroenterology,3,0,30,0
+CLM00125,97110,727,Not medically necessary,172,Radiology,8,0,63,1
+CLM00126,97110,1920,Missing documentation,21,Family Medicine,3,0,77,0
+CLM00127,45378,2038,Experimental procedure,52,Family Medicine,3,1,72,0
+CLM00128,97112,980,Missing documentation,169,Internal Medicine,5,0,48,0
+CLM00129,99214,543,Experimental procedure,99,Internal Medicine,9,0,77,0
+CLM00130,20605,4139,Missing documentation,59,Radiology,2,0,56,0
+CLM00131,99214,2202,No prior authorization,54,Physical Therapy,3,1,52,1
+CLM00132,20605,2359,Not medically necessary,176,Radiology,2,0,21,1
+CLM00133,70553,4596,Experimental procedure,86,Gastroenterology,1,1,79,0
+CLM00134,99215,1397,Missing documentation,128,Orthopedics,6,1,35,1
+CLM00135,70450,3537,No prior authorization,135,Radiology,8,0,54,1
+CLM00136,97112,3392,Not medically necessary,107,Internal Medicine,10,0,73,1
+CLM00137,97110,1231,Incorrect coding,114,Internal Medicine,4,0,24,0
+CLM00138,97112,540,Experimental procedure,145,Internal Medicine,2,1,69,0
+CLM00139,20605,4839,Out of network,166,Internal Medicine,10,0,48,1
+CLM00140,99215,2947,Experimental procedure,146,Physical Therapy,1,0,44,0
+CLM00141,70450,3094,Incorrect coding,103,Physical Therapy,6,0,32,1
+CLM00142,99215,806,Experimental procedure,55,Physical Therapy,1,0,42,0
+CLM00143,20610,3609,Experimental procedure,15,Family Medicine,7,0,66,1
+CLM00144,45378,734,Missing documentation,102,Family Medicine,7,1,49,1
+CLM00145,97112,580,Incorrect coding,67,Family Medicine,2,0,57,1
+CLM00146,70450,1994,Missing documentation,120,Gastroenterology,1,0,36,0
+CLM00147,97110,4290,No prior authorization,105,Family Medicine,1,0,73,1
+CLM00148,45378,1926,Missing documentation,2,Radiology,3,0,43,0
+CLM00149,20610,1049,Experimental procedure,102,Internal Medicine,7,1,60,1
+CLM00150,97112,1255,Incorrect coding,128,Physical Therapy,5,0,47,0
+CLM00151,99215,2189,Missing documentation,115,Physical Therapy,3,0,60,0
+CLM00152,99213,2412,Not medically necessary,41,Internal Medicine,6,0,44,1
+CLM00153,70450,4915,No prior authorization,13,Physical Therapy,3,0,71,0
+CLM00154,20605,1160,Incorrect coding,11,Internal Medicine,2,0,83,1
+CLM00155,99215,3767,Not medically necessary,153,Gastroenterology,2,1,28,1
+CLM00156,45378,4587,Not medically necessary,23,Radiology,4,0,19,1
+CLM00157,99214,1764,Missing documentation,163,Radiology,6,1,83,0
+CLM00158,97110,2173,Incorrect coding,21,Internal Medicine,10,0,20,1
+CLM00159,45378,1884,Incorrect coding,115,Gastroenterology,2,0,78,0
+CLM00160,97112,4447,No prior authorization,21,Gastroenterology,3,1,27,1
+CLM00161,97112,1261,No prior authorization,26,Orthopedics,1,1,64,1
+CLM00162,99213,4159,Experimental procedure,83,Family Medicine,9,1,80,0
+CLM00163,99213,1958,Out of network,136,Radiology,5,0,56,0
+CLM00164,70450,4770,Experimental procedure,21,Physical Therapy,8,0,83,1
+CLM00165,99213,3075,Not medically necessary,84,Internal Medicine,7,1,51,1
+CLM00166,99214,4914,Not medically necessary,98,Radiology,10,0,59,1
+CLM00167,97112,3076,Incorrect coding,9,Internal Medicine,4,0,53,0
+CLM00168,99213,4458,Out of network,74,Radiology,6,1,23,1
+CLM00169,20610,3536,Experimental procedure,52,Internal Medicine,1,1,31,0
+CLM00170,70450,2191,No prior authorization,115,Family Medicine,10,1,83,1
+CLM00171,99214,3075,Out of network,171,Internal Medicine,1,1,39,0
+CLM00172,99214,4762,Not medically necessary,147,Gastroenterology,9,1,35,0
+CLM00173,70553,4919,Not medically necessary,158,Physical Therapy,10,0,78,1
+CLM00174,99214,892,Incorrect coding,2,Gastroenterology,5,1,69,1
+CLM00175,70553,764,Missing documentation,150,Orthopedics,10,1,78,1
+CLM00176,97110,1636,Missing documentation,122,Gastroenterology,8,0,80,1
+CLM00177,99215,3568,Incorrect coding,104,Orthopedics,8,0,69,1
+CLM00178,99214,2455,Out of network,171,Gastroenterology,5,0,58,0
+CLM00179,97112,553,Experimental procedure,62,Orthopedics,1,1,45,0
+CLM00180,20610,1322,Incorrect coding,134,Family Medicine,8,0,68,1
+CLM00181,20610,4275,Not medically necessary,83,Physical Therapy,5,1,73,0
+CLM00182,20610,4154,Not medically necessary,122,Radiology,10,0,77,1
+CLM00183,99214,1733,Out of network,118,Physical Therapy,8,1,28,1
+CLM00184,99215,2565,Missing documentation,13,Internal Medicine,5,1,81,0
+CLM00185,20605,2394,No prior authorization,128,Radiology,7,1,54,0
+CLM00186,99213,1223,No prior authorization,112,Orthopedics,10,0,29,0
+CLM00187,45378,3056,Out of network,34,Physical Therapy,3,0,82,1
+CLM00188,20605,1757,Experimental procedure,79,Gastroenterology,6,1,38,0
+CLM00189,70553,2606,Out of network,69,Gastroenterology,4,1,35,1
+CLM00190,99214,2149,No prior authorization,141,Gastroenterology,6,0,20,1
+CLM00191,70553,1302,Incorrect coding,124,Radiology,2,1,53,0
+CLM00192,45378,3995,Not medically necessary,168,Family Medicine,8,1,73,1
+CLM00193,45378,2723,Incorrect coding,74,Radiology,4,0,65,0
+CLM00194,70450,4205,Out of network,29,Internal Medicine,9,1,65,1
+CLM00195,20610,2642,Not medically necessary,137,Physical Therapy,1,1,62,1
+CLM00196,97112,3193,No prior authorization,139,Physical Therapy,10,1,30,0
+CLM00197,70553,4029,Incorrect coding,50,Radiology,8,0,54,0
+CLM00198,45378,3227,Out of network,130,Internal Medicine,9,0,26,1
+CLM00199,97110,3576,Incorrect coding,1,Radiology,6,1,36,0
+CLM00200,99215,842,No prior authorization,123,Internal Medicine,10,0,75,0
